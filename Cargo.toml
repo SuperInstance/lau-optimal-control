@@ -1,0 +1,15 @@
+[package]
+name = "lau-optimal-control"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/SuperInstance/lau-optimal-control"
+description = "Optimal control theory: LQR, Riccati equations, Pontryagin's maximum principle, HJB, trajectory optimization, and controllability analysis"
+
+[dependencies]
+nalgebra = { version = "0.33", features = ["serde-serialize"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[lib]
+path = "src/lib.rs"
